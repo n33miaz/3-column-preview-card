@@ -1,0 +1,67 @@
+main {
+    padding: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div > * {
+    margin-top: 10%;
+}
+
+div > button {
+    margin-top: 30%;
+}
+
+h2 {
+    color: #f2f2f2;
+    text-transform: uppercase;
+}
+
+p {
+    color: #f2f2f2;
+    opacity: 80%;
+}
+
+button {
+    padding: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    cursor: pointer;
+    border: solid #f2f2f2;
+    background-color: #f2f2f2;
+    color: inherit;
+    border-radius: 50px;
+    transition: color 0.3s ease;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #f2f2f2;
+}
+
+#sedans {
+    background-color: #e28525;
+    height: 60%;
+    width: 50%;
+    padding: 5%;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+#suvs {
+    background-color: #016972;
+    height: 60%;
+    width: 50%;
+    padding: 5%;
+}
+
+#luxury {
+    background-color: #00403f;
+    height: 60%;
+    width: 50%;
+    padding: 5%;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
