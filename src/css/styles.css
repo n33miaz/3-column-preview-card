@@ -1,67 +1,81 @@
-main {
-    padding: 15%;
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #141414;
 }
 
-div > * {
-    margin-top: 10%;
+.perfil {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 515px;
+    width: 330px;
+    border-radius: 10px;
 }
 
-div > button {
-    margin-top: 30%;
-}
-
-h2 {
-    color: #f2f2f2;
-    text-transform: uppercase;
-}
-
-p {
-    color: #f2f2f2;
-    opacity: 80%;
-}
-
-button {
-    padding: 5%;
-    padding-right: 10%;
-    padding-left: 10%;
-    cursor: pointer;
-    border: solid #f2f2f2;
-    background-color: #f2f2f2;
-    color: inherit;
+.perfil > img {
+    height: 80px;
     border-radius: 50px;
-    transition: color 0.3s ease;
+    margin-top: 30px;
 }
 
-button:hover {
-    background-color: transparent;
-    color: #f2f2f2;
+.perfil > h2 {
+    font-family: "Roboto", sans-serif;
+    color: white;
 }
 
-#sedans {
-    background-color: #e28525;
-    height: 60%;
-    width: 50%;
-    padding: 5%;
-    border-top-left-radius: 2%;
-    border-bottom-left-radius: 2%;
+#pais {
+    margin-top: -15px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: #c4f82a;
+    font-weight: bold;
 }
 
-#suvs {
-    background-color: #016972;
-    height: 60%;
-    width: 50%;
-    padding: 5%;
+#frase {
+    margin: 5px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    color: white;
 }
 
-#luxury {
-    background-color: #00403f;
-    height: 60%;
-    width: 50%;
-    padding: 5%;
-    border-top-right-radius: 2%;
-    border-bottom-right-radius: 2%;
+.links {
+    gap: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.links > a > button {
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.links > a > button:hover {
+    background-color: #c4f82a;
+    color: #333333;
 }
